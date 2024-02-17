@@ -5,24 +5,25 @@ import { ErrorDetailsComponent } from '../pages/error/components/error-details/e
 @Injectable({
   providedIn: 'root'
 })
-export class ErrorDialogService {
+export class ErrorDialogService<RESPONSE_DTO> {
 
   public isDialogOpen: Boolean = false;
 
   constructor(private dialog: MatDialog) { }
 
-  openDialog(data: { message: string, status: string }): any {
+  openDialog(data: RESPONSE_DTO): any {
     if (this.isDialogOpen) {
       return false;
     }
     this.isDialogOpen = true;
     const dialogRef = this.dialog.open(ErrorDetailsComponent, {
       width: '300px',
-      data: data
+      data: data,
+      enterAnimationDuration: 500,
+      exitAnimationDuration: 500
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
       this.isDialogOpen = false;
     });
   }

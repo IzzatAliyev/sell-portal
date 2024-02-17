@@ -1,28 +1,16 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
+import { ErrorResponseDto } from '../../../../models/error/error-response-dto';
 
 @Component({
   selector: 'app-error-details',
   standalone: true,
-  imports: [],
-  template: `
-    <div>
-      <div>
-        <p>
-          Status: {{data.status}}
-        </p>
-        <p>
-          Error: {{data.error}}
-        </p>
-        <p>
-          Message: {{data.message}}
-        </p>
-      </div>
-    </div>
-  `,
+  imports: [MatDialogModule, MatButtonModule],
+  templateUrl: './error-details.component.html',
   styles: ``
 })
 export class ErrorDetailsComponent {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: { status: string, error: string, message: string }) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: ErrorResponseDto) { }
 }

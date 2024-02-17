@@ -2,13 +2,14 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map } from 'rxjs';
 import { ErrorDialogService } from './error-dialog.service';
+import { ErrorResponseDto } from '../models/error/error-response-dto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
 
-  constructor(private _http: HttpClient, private errorDialogService: ErrorDialogService) { }
+  constructor(private _http: HttpClient, private errorDialogService: ErrorDialogService<ErrorResponseDto>) { }
 
   getAll(apiUrl: string, httpParams: HttpParams): Observable<RESPONSE_DTO[]> {
     return this._http.get(apiUrl, {
@@ -20,17 +21,17 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
       }),
       catchError(error => {
         console.log(error)
-        let data = { error: '', message: '', status: '' };
+        let data: ErrorResponseDto;
         if (error.error.error == null) {
           data = {
             error: "",
-            message: 'problem with connect to server',
+            message: 'Problem with connect to the server',
             status: error.status
           };
         } else {
           data = {
-            error: error.error.error,
-            message: error.error.message,
+            error: error.error,
+            message: error.message,
             status: error.status
           };
         }
@@ -46,7 +47,7 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
         return res
       }),
       catchError(error => {
-        let data = { error: '', message: '', status: '' };
+        let data: ErrorResponseDto;
         data = {
           error: error.error.error,
           message: error.error.message,
@@ -68,7 +69,7 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
           return res
         }),
         catchError(error => {
-          let data = { error: '', message: '', status: '' };
+          let data: ErrorResponseDto;
           data = {
             error: error.error.error,
             message: error.error.message,
@@ -86,7 +87,7 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
         return res
       }),
       catchError(error => {
-        let data = { error: '', message: '', status: '' };
+        let data: ErrorResponseDto;
         if (error.error == null && error.status == 403) {
           data = {
             error: "",
@@ -112,7 +113,7 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
         return res
       }),
       catchError(error => {
-        let data = { error: '', message: '', status: '' };
+        let data: ErrorResponseDto;
         if (error.error == null && error.status == 403) {
           data = {
             error: "",
@@ -138,7 +139,7 @@ export class ApiService<REQUEST_DTO, RESPONSE_DTO>  {
         return res
       }),
       catchError(error => {
-        let data = { error: '', message: '', status: '' };
+        let data: ErrorResponseDto;
         if (error.error == null && error.status == 403) {
           data = {
             error: "",
