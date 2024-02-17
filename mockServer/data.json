@@ -1,0 +1,225 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "name": "The Catcher in the Rye",
+        "price": 15.99,
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "publicationYear": 1951,
+        "isbn": "978-0-316-76948-0",
+        "language": "English",
+        "rating": 4.5
+      },
+      {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "price": 12.99,
+        "author": "Harper Lee",
+        "genre": "Classics",
+        "publicationYear": 1960,
+        "isbn": "978-0-06-112008-4",
+        "language": "English",
+        "rating": 4.8
+      },
+      {
+        "id": 3,
+        "name": "1984",
+        "price": 10.99,
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "publicationYear": 1949,
+        "isbn": "978-0-452-28423-4",
+        "language": "English",
+        "rating": 4.6
+      },
+      {
+        "id": 4,
+        "name": "The Great Gatsby",
+        "price": 14.99,
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classics",
+        "publicationYear": 1925,
+        "isbn": "978-0-7432-7356-5",
+        "language": "English",
+        "rating": 4.7
+      },
+      {
+        "id": 5,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "price": 19.99,
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "publicationYear": 1997,
+        "isbn": "978-0-590-35340-3",
+        "language": "English",
+        "rating": 4.9
+      },
+      {
+        "id": 6,
+        "name": "The Hobbit",
+        "price": 18.99,
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "publicationYear": 1937,
+        "isbn": "978-0-261-10295-2",
+        "language": "English",
+        "rating": 4.8
+      },
+      {
+        "id": 7,
+        "name": "Pride and Prejudice",
+        "price": 13.99,
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "publicationYear": 1813,
+        "isbn": "978-0-19-953556-9",
+        "language": "English",
+        "rating": 4.5
+      },
+      {
+        "id": 8,
+        "name": "The Lord of the Rings",
+        "price": 25.99,
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "publicationYear": 1954,
+        "isbn": "978-0-618-34625-4",
+        "language": "English",
+        "rating": 4.9
+      },
+      {
+        "id": 9,
+        "name": "The Da Vinci Code",
+        "price": 16.99,
+        "author": "Dan Brown",
+        "genre": "Mystery",
+        "publicationYear": 2003,
+        "isbn": "978-0-385-50420-5",
+        "language": "English",
+        "rating": 4.2
+      },
+      {
+        "id": 10,
+        "name": "The Alchemist",
+        "price": 11.99,
+        "author": "Paulo Coelho",
+        "genre": "Fiction",
+        "publicationYear": 1988,
+        "isbn": "978-0-06-112008-4",
+        "language": "English",
+        "rating": 4.7
+      },
+      {
+        "id": 11,
+        "name": "Brave New World",
+        "price": 14.99,
+        "author": "Aldous Huxley",
+        "genre": "Dystopian",
+        "publicationYear": 1932,
+        "isbn": "978-0-06-085052-4",
+        "language": "English",
+        "rating": 4.4
+      },
+      {
+        "id": 12,
+        "name": "The Shining",
+        "price": 17.99,
+        "author": "Stephen King",
+        "genre": "Horror",
+        "publicationYear": 1977,
+        "isbn": "978-0-385-12167-5",
+        "language": "English",
+        "rating": 4.6
+      },
+      {
+        "id": 13,
+        "name": "The Hunger Games",
+        "price": 16.99,
+        "author": "Suzanne Collins",
+        "genre": "Science Fiction",
+        "publicationYear": 2008,
+        "isbn": "978-0-439-02349-8",
+        "language": "English",
+        "rating": 4.5
+      },
+      {
+        "id": 14,
+        "name": "The Road",
+        "price": 12.99,
+        "author": "Cormac McCarthy",
+        "genre": "Post-Apocalyptic",
+        "publicationYear": 2006,
+        "isbn": "978-0-307-38789-9",
+        "language": "English",
+        "rating": 4.3
+      },
+      {
+        "id": 15,
+        "name": "The Girl on the Train",
+        "price": 14.99,
+        "author": "Paula Hawkins",
+        "genre": "Thriller",
+        "publicationYear": 2015,
+        "isbn": "978-0-525-42665-5",
+        "language": "English",
+        "rating": 4.2
+      },
+      {
+        "id": 16,
+        "name": "The Kite Runner",
+        "price": 15.99,
+        "author": "Khaled Hosseini",
+        "genre": "Contemporary Fiction",
+        "publicationYear": 2003,
+        "isbn": "978-1-59448-000-3",
+        "language": "English",
+        "rating": 4.7
+      },
+      {
+        "id": 17,
+        "name": "The Martian",
+        "price": 18.99,
+        "author": "Andy Weir",
+        "genre": "Science Fiction",
+        "publicationYear": 2011,
+        "isbn": "978-0-553-41802-6",
+        "language": "English",
+        "rating": 4.6
+      },
+      {
+        "id": 18,
+        "name": "Gone Girl",
+        "price": 13.99,
+        "author": "Gillian Flynn",
+        "genre": "Mystery",
+        "publicationYear": 2012,
+        "isbn": "978-0-307-95829-2",
+        "language": "English",
+        "rating": 4.4
+      },
+      {
+        "id": 19,
+        "name": "The Fault in Our Stars",
+        "price": 11.99,
+        "author": "John Green",
+        "genre": "Young Adult",
+        "publicationYear": 2012,
+        "isbn": "978-1-4481-4611-2",
+        "language": "English",
+        "rating": 4.5
+      },
+      {
+        "id": 20,
+        "name": "The Silent Patient",
+        "price": 16.99,
+        "author": "Alex Michaelides",
+        "genre": "Psychological Thriller",
+        "publicationYear": 2019,
+        "isbn": "978-1-250-30169-7",
+        "language": "English",
+        "rating": 4.3
+      }
+    ]
+  }
+  
