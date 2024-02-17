@@ -1,7 +1,9 @@
 # Client
 
 > generated with `ng new client --minimal -S -g --routing --style=scss --standalone`
+>
 > generate service without tests `ng g s {name} --skip-tests`
+>
 > generate component without tests `ng g c {name} --skip-tests`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
